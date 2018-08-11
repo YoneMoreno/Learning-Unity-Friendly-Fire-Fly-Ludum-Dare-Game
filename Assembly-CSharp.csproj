@@ -55,9 +55,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FinEnemigo.cs" />
     <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\FinEscenario.cs" />
+    <Compile Include="Assets\Scripts\FinEnemigo.cs" />
     <Compile Include="Assets\Scripts\LeftMove.cs" />
     <Compile Include="Assets\Scripts\Move.cs" />
     <Reference Include="UnityEditor.StandardEvents">

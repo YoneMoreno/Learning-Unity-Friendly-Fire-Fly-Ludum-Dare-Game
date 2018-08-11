@@ -13,6 +13,8 @@ public class Enemy : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        player1 = GameObject.Find("Player1");
+        player2 = GameObject.Find("Player2");
     }
 
     // Update is called once per frame

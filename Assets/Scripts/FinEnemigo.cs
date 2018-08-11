@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FinEnemigo : MonoBehaviour
 {
-    public GameObject finEscenario;
+    public GameObject spawnEnemy;
     public GameObject enemy;
 
     // Use this for initialization
@@ -23,7 +23,7 @@ public class FinEnemigo : MonoBehaviour
         if (other.transform.CompareTag("Enemy"))
         {
             print("Enemy");
-            Instantiate(enemy, finEscenario.transform.position, Quaternion.identity);
+            Instantiate(enemy, spawnEnemy.transform.position+Vector3.right*10, Quaternion.identity);
             Destroy(other.gameObject);
         }
     }
