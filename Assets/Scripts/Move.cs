@@ -36,7 +36,7 @@ public class Move : MonoBehaviour
             rb.AddForce((transform.up *
                          Time.deltaTime *
                          jumpSpeed *
-                         Input.GetAxis("VerticalPlayer1")), ForceMode.Impulse);
+                         Input.GetAxis("VerticalPlayer1")), ForceMode.VelocityChange);
         }
 
         if (numPlayer == NumPlayer.player2)
@@ -44,7 +44,7 @@ public class Move : MonoBehaviour
             rb.AddForce((transform.up *
                          Time.deltaTime *
                          jumpSpeed *
-                         Input.GetAxis("VerticalPlayer2")), ForceMode.Impulse);
+                         Input.GetAxis("VerticalPlayer2")), ForceMode.VelocityChange);
         }
     }
 }
